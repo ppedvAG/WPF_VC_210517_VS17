@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Binding
+namespace Container
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,12 +23,9 @@ namespace Binding
         public MainWindow()
         {
             InitializeComponent();
-        }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            BindingExpression be = Tbx_Zwei.GetBindingExpression(TextBox.TextProperty);
-            be.UpdateSource();
+            //Codeseitiger Schreib-Zugriff auf eine Attached-Property des Canvas
+            Canvas.SetLeft(Rct_Blue, 50);
         }
     }
 }

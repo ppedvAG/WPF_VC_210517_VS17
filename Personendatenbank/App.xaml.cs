@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Binding
+namespace Personendatenbank
 {
     /// <summary>
     /// Interaction logic for App.xaml

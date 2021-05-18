@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Binding
+namespace Personendatenbank
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,12 +23,6 @@ namespace Binding
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            BindingExpression be = Tbx_Zwei.GetBindingExpression(TextBox.TextProperty);
-            be.UpdateSource();
         }
     }
 }

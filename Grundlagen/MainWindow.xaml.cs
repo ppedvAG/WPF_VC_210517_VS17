@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Binding
+namespace Grundlagen
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -22,13 +22,16 @@ namespace Binding
     {
         public MainWindow()
         {
+            //Dies verweist auf eine Methode in der (versteckten) automatisch generierten 2.Klassen-Datei (*.g.i.cs),
+            //welche für das Rendering des XAML-Codes verantwortlich ist. InitializeComponent() erstellt die
+            //Steuerelement-Objekte und muss daher als erste Methode des Konstruktors bestehen bleiben
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Btn_BeispielButton_Click(object sender, RoutedEventArgs e)
         {
-            BindingExpression be = Tbx_Zwei.GetBindingExpression(TextBox.TextProperty);
-            be.UpdateSource();
+            //Ändern einer UI-Property (Hier der Inhalt des Buttons)
+            Btn_BeispielButton.Content = "Ich wurde angeklickt";
         }
     }
 }
