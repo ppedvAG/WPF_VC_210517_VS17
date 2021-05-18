@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1525
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul05_Binding", "WPF_VC_210517_VS17\Modul05_Binding.csproj", "{4E2A9DED-C7C3-440F-9083-68AE123433B4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker", "ColorPicker\ColorPicker.csproj", "{EA03AB61-79D5-4CB6-8765-9C0D73C99199}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{B1FC5E31-DF4B-42F5-92AD-73812BDA9146}"
@@ -19,16 +17,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul04_EventRouting", "Eve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul06_DataBinding", "DataBinding\Modul06_DataBinding.csproj", "{87914528-2487-4EA3-86D7-74264D93ED02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul05_Binding", "Binding\Modul05_Binding.csproj", "{4E2A9DED-C7C3-440F-9083-68AE123433B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4E2A9DED-C7C3-440F-9083-68AE123433B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E2A9DED-C7C3-440F-9083-68AE123433B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E2A9DED-C7C3-440F-9083-68AE123433B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E2A9DED-C7C3-440F-9083-68AE123433B4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EA03AB61-79D5-4CB6-8765-9C0D73C99199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EA03AB61-79D5-4CB6-8765-9C0D73C99199}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA03AB61-79D5-4CB6-8765-9C0D73C99199}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +53,10 @@ Global
 		{87914528-2487-4EA3-86D7-74264D93ED02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87914528-2487-4EA3-86D7-74264D93ED02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87914528-2487-4EA3-86D7-74264D93ED02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E2A9DED-C7C3-440F-9083-68AE123433B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E2A9DED-C7C3-440F-9083-68AE123433B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E2A9DED-C7C3-440F-9083-68AE123433B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E2A9DED-C7C3-440F-9083-68AE123433B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
