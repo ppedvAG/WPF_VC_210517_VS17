@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul06_DataBinding", "Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul05_Binding", "Binding\Modul05_Binding.csproj", "{4E2A9DED-C7C3-440F-9083-68AE123433B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul07_Resources_Styles", "Resources_Styles\Modul07_Resources_Styles.csproj", "{8F0C7B0C-CCFD-49F1-B3F6-64BE2ECDAB4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{4E2A9DED-C7C3-440F-9083-68AE123433B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E2A9DED-C7C3-440F-9083-68AE123433B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E2A9DED-C7C3-440F-9083-68AE123433B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F0C7B0C-CCFD-49F1-B3F6-64BE2ECDAB4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F0C7B0C-CCFD-49F1-B3F6-64BE2ECDAB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F0C7B0C-CCFD-49F1-B3F6-64BE2ECDAB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F0C7B0C-CCFD-49F1-B3F6-64BE2ECDAB4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
