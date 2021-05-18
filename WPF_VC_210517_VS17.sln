@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul05_Binding", "Binding\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul07_Resources_Styles", "Resources_Styles\Modul07_Resources_Styles.csproj", "{8F0C7B0C-CCFD-49F1-B3F6-64BE2ECDAB4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Templates", "Templates\Templates.csproj", "{D6634919-00E4-4429-A9B1-602A2C188C04}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul08_Templates", "Templates\Modul08_Templates.csproj", "{D6634919-00E4-4429-A9B1-602A2C188C04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
