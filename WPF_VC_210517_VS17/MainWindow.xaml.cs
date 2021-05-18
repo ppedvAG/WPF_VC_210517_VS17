@@ -27,7 +27,7 @@ namespace Binding
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            BindingExpression be = Tbx_Zwei.GetBindingExpression(TextBox.TextProperty);
+            BindingExpression be = Tbx_Vier.GetBindingExpression(TextBox.TextProperty);
             be.UpdateSource();
         }
     }
