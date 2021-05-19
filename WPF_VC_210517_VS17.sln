@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul10_Trigger", "Trigger\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul11_UserControls", "UserControls\Modul11_UserControls.csproj", "{DCE557F6-E66D-40EA-9150-8CF31BE4802B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands", "Commands\Commands.csproj", "{DDE17CD1-3393-4123-85CA-7B0870AD34E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{DCE557F6-E66D-40EA-9150-8CF31BE4802B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCE557F6-E66D-40EA-9150-8CF31BE4802B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCE557F6-E66D-40EA-9150-8CF31BE4802B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE17CD1-3393-4123-85CA-7B0870AD34E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE17CD1-3393-4123-85CA-7B0870AD34E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE17CD1-3393-4123-85CA-7B0870AD34E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE17CD1-3393-4123-85CA-7B0870AD34E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

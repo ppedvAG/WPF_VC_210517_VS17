@@ -36,8 +36,18 @@
                     IsEnabled="{Binding ElementName=Dgd_Personen, Path=SelectedItem, Converter={StaticResource person2bool}}"/>
             <Button x:Name="Btn_Loeschen"
                     Content="Lösche Person"
-                    Click="Btn_Loeschen_Click" 
-                    IsEnabled="{Binding ElementName=Dgd_Personen, Path=SelectedItem, Converter={StaticResource person2bool}}"/>
+                    Click="Btn_Loeschen_Click">
+                <Button.Style>
+                    <Style TargetType="Button" BasedOn="{StaticResource Sty_Btn_Base}">
+                        <Setter Property="IsEnabled" Value="True"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=Dgd_Personen, Path=SelectedItem}" Value="{x:Null}">
+                                <Setter Property="IsEnabled" Value="False"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
         </WrapPanel>
 
         <DataGrid x:Name="Dgd_Personen"
