@@ -32,6 +32,9 @@ namespace Personendatenbank
         private Gender geschlecht;
         public Gender Geschlecht { get => geschlecht; set { geschlecht = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Geschlecht))); } }
 
+        private int kinder;
+        public int Kinder { get => kinder; set { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Kinder))); kinder = value; } }
+
         public Person()
         {
             this.Vorname = String.Empty;
@@ -66,10 +69,26 @@ namespace Personendatenbank
                     case nameof(Lieblingsfarbe):
                         if (Lieblingsfarbe.ToString().Equals("#00000000")) return "Wählen Sie Ihre Lieblingsfarbe aus.";
                         break;
+
+                    case nameof(Kinder):
+                        if (Kinder < 0) return "Dieser Wert muss mindestens '0' sein.";
+                        break;
                 }
 
                 return String.Empty;
             }
+        }
+
+        public Person(Person altePerson)
+        {
+            this.Vorname = altePerson.Vorname;
+            this.Nachname = altePerson.Nachname;
+            this.Geschlecht = altePerson.Geschlecht;
+            this.Verheiratet = altePerson.Verheiratet;
+            this.Lieblingsfarbe = altePerson.Lieblingsfarbe;
+            this.Kinder = altePerson.Kinder;
+
+            this.Geburtsdatum = new DateTime(altePerson.Geburtsdatum.Year, altePerson.Geburtsdatum.Month, altePerson.Geburtsdatum.Day);
         }
     }
 }

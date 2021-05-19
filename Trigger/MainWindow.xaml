@@ -62,9 +62,10 @@
 
         <Button x:Name="Btn_Ändern" Click="Btn_Ändern_Click" Content="Ändern"/>
 
-
-        <uc:ColorPicker x:Name="ColorPicker" Tap="ColorPicker_Tap"/>
-        <!--<Button Content="Hallo" uc:ColorPicker.Count="2"/>-->
+        <!--Einbindung des UserControls aus Modul11 (Bindung am Window.Background s.o. und TapEventhandler im CodeBehind) -->
+        <uc:ColorPicker x:Name="ColorPicker" Tap="ColorPicker_Tap">
+            <!--<Button Content="Hallo" uc:ColorPicker.Count="2"/>-->            
+        </uc:ColorPicker>
 
     </StackPanel>
     

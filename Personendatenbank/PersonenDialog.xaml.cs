@@ -31,10 +31,18 @@ namespace Personendatenbank
 
             string ausgabe = neuePerson.Vorname + " " + neuePerson.Nachname + " (" + neuePerson.Geschlecht + ")\n" + neuePerson.Geburtsdatum.ToShortDateString() + "\n" + neuePerson.Lieblingsfarbe.ToString();
             if (neuePerson.Verheiratet) ausgabe = ausgabe + "\nIst verheiratet";
+            if (neuePerson.Kinder > 0) ausgabe = ausgabe + $"\n Hat {neuePerson.Kinder} Kinder";
             if (MessageBox.Show(ausgabe + "\nAbspeichern?", neuePerson.Vorname + " " + neuePerson.Nachname, MessageBoxButton.YesNo, MessageBoxImage.Information) == MessageBoxResult.Yes)
             {
+                this.DialogResult = true;
+
                 this.Close();
             }
+        }
+
+        private void Btn_Abbruch_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

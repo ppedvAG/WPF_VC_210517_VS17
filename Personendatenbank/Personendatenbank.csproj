@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Db_Uebersicht.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GlobalResources.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -67,6 +71,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ColorToBrushConverter.cs" />
+    <Compile Include="Db_Uebersicht.xaml.cs">
+      <DependentUpon>Db_Uebersicht.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GenderToBoolConverter.cs" />
     <Compile Include="PersonenDialog.xaml.cs">
       <DependentUpon>PersonenDialog.xaml</DependentUpon>
@@ -75,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Person.cs" />
+    <Compile Include="PersonToBoolConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -99,6 +108,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UserControls\Modul11_UserControls.csproj">
+      <Project>{dce557f6-e66d-40ea-9150-8cf31be4802b}</Project>
+      <Name>Modul11_UserControls</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -50,6 +50,7 @@ namespace Trigger
             BoolVal = !BoolVal;
         }
 
+        //EventHandler für eigenes UserControl-Event aus Modul11
         private void ColorPicker_Tap(object sender, RoutedEventArgs e)
         {
             MessageBox.Show((sender as ColorPicker).PickedColor.ToString());
