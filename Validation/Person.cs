@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Validation
 {
+    //Für ValidatesOnDataErrors muss z.B. das Interface IDataErrorInfo implementiert werden. Dieses erfordert die Einbindung von zwei zusätzlichen
     public class Person : IDataErrorInfo
     {
         private string name;
@@ -15,6 +16,9 @@ namespace Validation
             get { return name; }
             set
             {
+                //Bei ValidatesOnException wird im Fehlerfall eine Exception geworfen, welche von der GUI aufgefangen
+                //wird und als Validierungsfehler interpretiert wird. Die Exception-Message ist der
+                //ErrorContent
                 if (value.All(x => Char.IsLetter(x)))
                     name = value;
                 else
@@ -24,8 +28,13 @@ namespace Validation
 
         public int Alter { get; set; }
 
+        //Von IDataErrorInfo geforderte Properties
+
+        //Error wird von WPF nicht benutzt
         public string Error => null;
 
+        //Diese Property wird von der GUI als Validierung verwendet. Wenn ein nicht-leerer String zurückgegeben wird, 
+        //dann wird dies als Fehler interpretiert und dieser String als Fehlermeldung
         public string this[string columnName]
         {
             get
