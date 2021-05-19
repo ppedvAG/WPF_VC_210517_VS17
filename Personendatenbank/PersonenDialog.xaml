@@ -15,6 +15,7 @@
     </Window.DataContext>
 
     <Window.Resources>
+        
         <local:GenderToBoolConverter x:Key="gender2bool"/>
 
         <ObjectDataProvider x:Key="Odp_ColorsProperties"

@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul08_Templates", "Templa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul09_Validation", "Validation\Modul09_Validation.csproj", "{5C2375E4-C89E-4594-A24F-5C4C619EE975}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trigger", "Trigger\Trigger.csproj", "{C8CFDE37-76B3-46CC-95EE-6D5C3D0425B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{5C2375E4-C89E-4594-A24F-5C4C619EE975}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C2375E4-C89E-4594-A24F-5C4C619EE975}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C2375E4-C89E-4594-A24F-5C4C619EE975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8CFDE37-76B3-46CC-95EE-6D5C3D0425B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8CFDE37-76B3-46CC-95EE-6D5C3D0425B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8CFDE37-76B3-46CC-95EE-6D5C3D0425B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8CFDE37-76B3-46CC-95EE-6D5C3D0425B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
