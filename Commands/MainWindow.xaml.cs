@@ -24,19 +24,22 @@ namespace Commands
         {
             InitializeComponent();
 
+            //Initialisierung der Commands
             CloseCmd = new CloseCommand();
-
-            OpenCmd = new CustomCommand
+            OeffnenCmd = new CustomCommand
                 (
-                    p => new MainWindow().Show(),
-
+                    //Übergabe der Execute()-Logik
+                    p => (new MainWindow()).Show(),
+                    //Übergabe der CanExecute()-Logik
                     p => (p as string).Length >= 1
                 );
 
+            //Setzen des DataContext
             this.DataContext = this;
         }
 
+        //Commandproperties 
         public CloseCommand CloseCmd { get; set; }
-        public CustomCommand OpenCmd { get; set; }
+        public CustomCommand OeffnenCmd { get; set; }
     }
 }

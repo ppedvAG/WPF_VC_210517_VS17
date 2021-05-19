@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.1525
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker", "ColorPicker\ColorPicker.csproj", "{EA03AB61-79D5-4CB6-8765-9C0D73C99199}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{B1FC5E31-DF4B-42F5-92AD-73812BDA9146}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personendatenbank (vgl. Modul14)", "Personendatenbank\Personendatenbank (vgl. Modul14).csproj", "{B1FC5E31-DF4B-42F5-92AD-73812BDA9146}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul01_Grundlagen", "Grundlagen\Modul01_Grundlagen.csproj", "{EE9FD9B3-F3F7-491D-A3B7-5DB3D6125585}"
 EndProject
@@ -29,7 +29,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul10_Trigger", "Trigger\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul11_UserControls", "UserControls\Modul11_UserControls.csproj", "{DCE557F6-E66D-40EA-9150-8CF31BE4802B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands", "Commands\Commands.csproj", "{DDE17CD1-3393-4123-85CA-7B0870AD34E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul13_Commands", "Commands\Modul13_Commands.csproj", "{DDE17CD1-3393-4123-85CA-7B0870AD34E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul14_MVVM", "MVVM\Modul14_MVVM.csproj", "{4647E4B9-BA4B-410E-82A5-24C0FDAFB878}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{DDE17CD1-3393-4123-85CA-7B0870AD34E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDE17CD1-3393-4123-85CA-7B0870AD34E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDE17CD1-3393-4123-85CA-7B0870AD34E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4647E4B9-BA4B-410E-82A5-24C0FDAFB878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4647E4B9-BA4B-410E-82A5-24C0FDAFB878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4647E4B9-BA4B-410E-82A5-24C0FDAFB878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4647E4B9-BA4B-410E-82A5-24C0FDAFB878}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
