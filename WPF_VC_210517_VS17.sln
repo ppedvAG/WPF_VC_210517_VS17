@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul07_Resources_Styles", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul08_Templates", "Templates\Modul08_Templates.csproj", "{D6634919-00E4-4429-A9B1-602A2C188C04}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation", "Validation\Validation.csproj", "{5C2375E4-C89E-4594-A24F-5C4C619EE975}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{D6634919-00E4-4429-A9B1-602A2C188C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6634919-00E4-4429-A9B1-602A2C188C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6634919-00E4-4429-A9B1-602A2C188C04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C2375E4-C89E-4594-A24F-5C4C619EE975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C2375E4-C89E-4594-A24F-5C4C619EE975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C2375E4-C89E-4594-A24F-5C4C619EE975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C2375E4-C89E-4594-A24F-5C4C619EE975}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

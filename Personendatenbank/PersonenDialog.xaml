@@ -20,6 +20,16 @@
         <ObjectDataProvider x:Key="Odp_ColorsProperties"
                             MethodName="GetProperties"
                             ObjectInstance="{x:Type Colors}"/>
+
+
+        <DataTemplate x:Key="dataTemplate">
+            <StackPanel Orientation="Horizontal">
+                <Border BorderBrush="Black" BorderThickness="1" Width="20" Height="20" Margin="5,0">
+                    <Rectangle Width="20" Height="20" Fill="{Binding Name}"/>
+                </Border>
+                <TextBlock Text="{Binding Name}"/>
+            </StackPanel>
+        </DataTemplate>
     </Window.Resources>
 
     <Grid Margin="10">
@@ -70,18 +80,12 @@
                   VerticalAlignment="Center"
                   Margin="2"
                   SelectedValue="{Binding Lieblingsfarbe}"
-                  SelectedValuePath="Name"
-                  ItemsSource="{Binding Source={StaticResource Odp_ColorsProperties}}">
-            <ComboBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <Border BorderBrush="Black" BorderThickness="1" Width="20" Height="20" Margin="5,0">
-                            <Rectangle Width="20" Height="20" Fill="{Binding Name}"/>
-                        </Border>
-                        <TextBlock Text="{Binding Name}"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ComboBox.ItemTemplate>
+                  ItemsSource="{Binding Source={StaticResource Odp_ColorsProperties}}"
+                  ItemTemplate="{StaticResource dataTemplate}">
+
+            <ComboBox.SelectedValuePath>
+                Name
+            </ComboBox.SelectedValuePath>
         </ComboBox>
 
         <StackPanel Margin="2"

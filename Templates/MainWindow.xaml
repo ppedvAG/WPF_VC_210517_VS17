@@ -76,5 +76,11 @@
         <!--SelectedValue gibt die in der Property SelectedValuePath im ItemControl angegebene Property zurück-->
         <TextBlock Text="{Binding ElementName=Lbx_Personen, Path=SelectedValue, StringFormat=SelectedValue: {0}}"/>
 
+
+        <Button>
+            <TextBlock>
+                <Bold>Ha</Bold><Underline>ll</Underline>o
+            </TextBlock>
+        </Button>
     </StackPanel>
 </Window>
