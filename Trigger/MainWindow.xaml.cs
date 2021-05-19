@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UserControls;
 
 namespace Trigger
 {
@@ -52,7 +53,6 @@ namespace Trigger
         private void ColorPicker_Tap(object sender, RoutedEventArgs e)
         {
             MessageBox.Show((sender as ColorPicker).PickedColor.ToString());
-            (sender as ColorPicker).PickedColor.ToString();
         }
     }
 }

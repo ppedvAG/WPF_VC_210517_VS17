@@ -3,9 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        xmlns:uc="clr-namespace:UserControls;assembly=UserControls"
+        
         xmlns:local="clr-namespace:Trigger"
         mc:Ignorable="d"
-        Title="MainWindow" Height="363" Width="267">
+        Title="MainWindow" Height="363" Width="267"
+        Background="{Binding ElementName=ColorPicker, Path=PickedColor}">
+    
     <!--Mittels Triggern kann das Verhalten/Aussehen von Objekten unter bestimmten Umständen geändert werden-->
     <StackPanel x:Name="Spl_Main"
                 Background="{Binding ElementName=ColorPicker, Path=PickedColor}">
@@ -56,6 +61,10 @@
         </TextBlock>
 
         <Button x:Name="Btn_Ändern" Click="Btn_Ändern_Click" Content="Ändern"/>
+
+
+        <uc:ColorPicker x:Name="ColorPicker" Tap="ColorPicker_Tap"/>
+        <!--<Button Content="Hallo" uc:ColorPicker.Count="2"/>-->
 
     </StackPanel>
     
