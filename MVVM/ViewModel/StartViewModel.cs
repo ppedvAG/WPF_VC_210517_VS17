@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVVM.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -43,8 +44,10 @@ namespace MVVM.ViewModel
                     //Exe:
                     p =>
                     {
-                        //Öffnen des nächsten Views und Zuweisung des ViewModels erfolgt in Lab_14
-
+                        //Instanzierung eines neunen ListViews
+                        ListView db_Ansicht = new ListView();
+                        //Anzeigen des neuen ListViews
+                        db_Ansicht.Show();
                         //Schließen dieses Fensters (welches über den CommandParameter übergeben wurde)
                         (p as Window).Close();
                     },
