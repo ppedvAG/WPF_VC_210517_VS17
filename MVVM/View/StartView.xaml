@@ -27,7 +27,7 @@
             <Button Content="Lade DB" Command="{Binding LadeDbCmd}"/>
             <!--Das OeffneDbCmd bekommt über den Parameter das aktuelle View mit übergeben, damit dessen
             Close-Methode ausgeführt werden kann.-->
-            <Button Content="Öffne DB" Command="{Binding OeffeneDbCmd}" CommandParameter="{Binding ElementName=Wnd_StartView}"/>
+            <Button Content="Öffne DB" Command="{Binding OeffenDbCmd}" CommandParameter="{Binding ElementName=Wnd_StartView}"/>
         </WrapPanel> 
                      
         <TextBlock Text="{Binding AnzahlPersonen, StringFormat=Es wurden {0} Personen geladen.}" HorizontalAlignment="Center"/>
