@@ -32,21 +32,26 @@ namespace Localisation
             this.DataContext = this;
         }
 
-
         public event PropertyChangedEventHandler PropertyChanged;
 
+        //Enum-Property zur Darstellung der Lokalisierung einer ComboBox
         private TestEnum _selecedEnumValue;
         public TestEnum SelecedEnumValue { get => _selecedEnumValue; set { _selecedEnumValue = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelecedEnumValue))); } }
 
+        //Methode zum Ändern der Sprache
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            //Testen der aktuellen Sprache
             if (Thread.CurrentThread.CurrentUICulture.Name == "en-US")
+                //Ändern der Sprache
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("de-DE");
             else
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
 
+            //Neu-Öffnen des aktuellen Fensters (mit neuer Sprache)
             new MainWindow().Show();
 
+            //Schließen des alten Fensters
             this.Close();
         }
     }

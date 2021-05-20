@@ -8,8 +8,11 @@
         Title="MainWindow" Height="399.146" Width="521.573">
 
     <Window.Resources>
+        <!--Mit dem BLEND-Designer erstelltes Storyboard-->
         <Storyboard x:Key="Storyboard1">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlock">
+                <!--Mittels Keyframes können bestimmte Zustände auf bestimmte Zeitpunkte der Animation gesetzt werden
+                Diese werden dann nacheinander ausgeführt-->
                 <EasingDoubleKeyFrame KeyTime="0:0:1" Value="210.4"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:2" Value="203.2"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:3" Value="38.84"/>
@@ -78,15 +81,22 @@
 
     <Canvas x:Name="Cvs_Main" Background="Wheat">
 
+        <!--Manuelle (Nicht-BLEND) Storyboards-->
+
         <Button Content="Klick Mich"
                 x:Name="Btn_KlickMich"
                 Canvas.Left="50"
                 Canvas.Top="50">
 
             <Button.Triggers>
+                <!--Animationen können über EventTrigger gestartet werden-->
                 <EventTrigger RoutedEvent="MouseEnter">
                     <BeginStoryboard>
+                        <!--Storyboard-Objekte beinhalten die gleichzeitig auszuführenden Animationen-->
                         <Storyboard>
+                            <!--Für jeden zu verändernden Wert muss eine eigene Animation des jeweilgen 
+                            Dateintyp definiert werden. Hier muss angegeben werden, welche Property verändert
+                            werden, welcher neue Wert zugewiesen werden  und wie lange dies dauern soll-->
                             <DoubleAnimation Storyboard.TargetProperty="(Canvas.Top)"
                                              To="500"
                                              Duration="0:0:2.5"
@@ -117,9 +127,13 @@
             </Button.Triggers>
         </Button>
 
+        <!--Objekte für BLEND-Storyboard-->
+
         <Button x:Name="button" Content="Button" Canvas.Top="100" Canvas.Left="100" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
+                    <!--Damit bestimmte Veränderungen durchgeführt und gerandert werden können, müssen entsprechende
+                    Transform-Objekte definiert werden. Hier werden diese durch das BLEND-Storyboard benutzt-->
                     <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform/>

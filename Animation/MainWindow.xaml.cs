@@ -25,6 +25,7 @@ namespace Animation
         {
             InitializeComponent();
 
+            ////Bsp für gerendertern Graphen
             //for (int i = 0; i < Points.Count - 1; i++)
             //{
             //    Line line = new Line();
@@ -41,10 +42,12 @@ namespace Animation
             //    Cvs_Main.Children.Add(line);
             //}
 
+            //Initialisierung und Aufruf einer Graph-Animation
             InitAnimation();
             sb.Begin(this);
         }
 
+        //Bsp-Daten für Graphen
         List<Point> Points = new List<Point>()
         {
             new Point(100, 200),
@@ -57,6 +60,7 @@ namespace Animation
 
         Storyboard sb;
 
+        //Methode zur Initialisierung des Storyboards/ der Animation
         public void InitAnimation()
         {
             sb = new Storyboard();

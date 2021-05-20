@@ -12,6 +12,8 @@
     </Window.Resources>
     
     <StackPanel>
+        <!--An resx-Dateien wird über die x:Static-Bindung angebunden. Die resx-Dateien müssen
+        auf public gesetzt werden, damit Xaml darauf zugreifen kann-->
         <Button Content="{x:Static loc:Resource.Btn_String}" Click="Button_Click"/>
         <TextBlock Text="{x:Static loc:Resource.Tbl_String}"/>
 

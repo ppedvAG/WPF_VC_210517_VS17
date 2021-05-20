@@ -37,7 +37,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul15_Localisation", "Loc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul12_RelativeSources", "RelativeSources\Modul12_RelativeSources.csproj", "{D84D3E79-49CC-450C-8E6B-FC918787C625}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animation", "Animation\Animation.csproj", "{D851EDB0-4278-437A-A81C-7105A3158FBE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul16_Animation", "Animation\Modul16_Animation.csproj", "{D851EDB0-4278-437A-A81C-7105A3158FBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul17_Multitouch", "Modul17_Multitouch\Modul17_Multitouch.csproj", "{5DAFAEC3-6698-4C76-8D6C-C0EE0EFE83A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{D851EDB0-4278-437A-A81C-7105A3158FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D851EDB0-4278-437A-A81C-7105A3158FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D851EDB0-4278-437A-A81C-7105A3158FBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DAFAEC3-6698-4C76-8D6C-C0EE0EFE83A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DAFAEC3-6698-4C76-8D6C-C0EE0EFE83A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DAFAEC3-6698-4C76-8D6C-C0EE0EFE83A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DAFAEC3-6698-4C76-8D6C-C0EE0EFE83A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
